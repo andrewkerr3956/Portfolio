@@ -1,0 +1,13 @@
+Name: Andrew Kerr
+
+Overview/Description of project: The web application I created is for an idea that me and
+my friends thought about for a while; a gaming magazine called Gamer Grove. 
+The site will show you the many magazines we will make, as well as some information about Gamer Grove in general.
+
+Details on the functionality: This web application is simple to use. The main page, 
+index.html, is meant to give a brief introduction to Gamer Grove (I used Lorem Ipsum
+text for this), and it also has a cool Bootstrap carousel. Then, you can click on the links that are in the navigation bar contained inside the header. There is "Home","About", "Customer Service", and "Magazines." Home will take you back to index.html, the homepage. About will link you to the about.html page, where there are some colorful section elements used to describe more in-depth of what Gamer Grove is and why you should choose it over other gaming magazines (This is also using Lorem Ipsum text). The reason I used Lorem Ipsum text for these pages is because I didn't want to focus on the content, and I instead wanted to focus on the design and functionality of the pages. Next, there is Customer Service. Customer Service links you to the contact.html page, which contains a form. This form is meant to be used to submit bugs or problems found with the web application. The form requires all input fields to be filled out. When the user clicks submit, it will submit it through formspree.io, and I will receive the submission. Finally, we have Magazines. Magazines links you to the magazine.html page, where you can view some of the covers of upcoming magazines. These covers are images contained inside flexbox items, which are stored in a flexbox container. I also put Bootstrap cards inside the flex-item boxes because I felt like it made them look a lot better. Overall, I had fun developing this web application, and I hope I can use this web application as a building block for future web applications that I build.
+
+Technologies used: HTML5, CSS3, Bootstrap 4, jQuery 3.5.1 (used to make the Bootstrap carousel work), Boostrap 4.5.2 JavaScript library (used to make the Bootstrap carousel work), Google Fonts, and Formspree.io.
+
+Ideas for Future Improvement: Add a feature where you can preview the first few pages of a magazine; make a login system for users to sign up for an account and log in to it; import more css libraries to help make the design look even cleaner and better; add more pages and link to them either in the navigation bar or somewhere else; mobile media queries can definitely use a little more work.

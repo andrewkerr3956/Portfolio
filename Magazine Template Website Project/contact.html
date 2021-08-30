@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamer Grove</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <!-- jQuery JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Google Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Abel&display=swap">
+</head>
+
+<body>
+    <header class="container-fluid">
+        <nav>
+            <img class="img-fluid" src="images/GGroveNew.png" alt="Logo" />
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Customer Service</a></li>
+                <li><a href="magazine.html">Magazines</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <!-- Use the container-fluid Bootstrap class to help keep the form in-tact
+            for mobile devices and laptop/desktop screens without media queries -->
+            <h2 class="container-fluid">Customer Service</h2>
+            <h3 class="container-fluid">Please tell us how we can help you.</h3>
+            <!-- Use the container-fluid Bootstrap class to help keep the form in-tact
+            for mobile devices and laptop/desktop screens without media queries -->
+            <form action="https://formspree.io/f/xbjqaqrr" method="POST" id="cs-form" class="container-fluid">
+                <label for="First Name">First Name</label> <br />
+                <input type="text" name="first-name" id="first-name" required="required" /> <br />
+                <label for="Last Name">Last Name</label> <br />
+                <input type="text" name="last-name" id="last-name" required="required" /> <br />
+                <label for="E-Mail Address">E-Mail Address</label> <br />
+                <input type="email" name="email-address" id="email-address" required="required" /> <br />
+                <label for="Issue">Please describe the issue.</label> <br />
+                <textarea cols="50" rows="8" name="issue" id="issue" required="required"></textarea> <br />
+                <button type="submit" name="cs-form-submit" id="cs-form-submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        &copy;Copyright Gamer Grove 2021
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+@media screen and (max-width: 479px ) {
+    #infoCarousel { display: none; }
+    #GG-About-2 { margin-left: 0; }
+    .flex-item { flex-basis: 100%!important; }
+}
+
+.float-left { float: left; }
+
+.float-right { float: right; }
+
+body { margin: 0; }
+
+header { background: rgb(48,68,120); text-align: center; }
+
+nav ul { margin: auto; text-align: center; font-weight: bold; }
+
+nav li { display: inline; text-align: center; text-decoration: none; margin-right: 10px; }
+
+nav a { text-decoration: none; color: white; }
+
+nav a:hover { text-decoration: none; color: antiquewhite; }
+
+nav img { max-height: 15%; height: 100px; max-width: 15%; width: 300px; margin-left: 50px; }
+
+p { font-family: 'Abel', sans-serif; }
+
+footer { background: rgb(48,68,120); margin-top: 50px; margin-bottom: 0; color: white; }
+
+#cs-form { font-family: 'Abel', sans-serif; text-align: center; }
+
+.card { text-align: center; }
+
+.flex-container { display: flex; flex-flow: wrap row; justify-content: center; 
+    font-family: 'Abel', sans-serif; }
+
+.flex-item { align-content: center; border: 4px black solid; margin: 10px; flex-basis: 30%; }
+
+#infoCarousel { margin-top: 10px; background: rgb(20,20,20); max-height: 20%; 
+    max-width: 20%; }
+
+#infoCarousel p { color: white; font-size: 0.8em; font-weight: bold; }
+
+.about-1 { background: rgb(200, 75, 75); border-radius: 0.2em; width: 65%; 
+    margin-top: 10px; display: inline-block; }
+
+.about-2 { background: rgb(75, 200, 75); border-radius: 0.2em; width: 65%; 
+    margin: 10px 0 0 35%; }
+
+.about-3 { background: rgb(75, 75, 200); border-radius: 0.2em; width: 65%; 
+    margin-top: 10px; }

@@ -1,0 +1,7 @@
+As a user, I should be able to fill out a form that will allow me to report issues I am
+having with the web application.
+
+As a user, I should be able to view the magazines available, so I can decide if I want to 
+read them or not.
+
+As a user, I should be able to see when the next magazine issue will be released.
