@@ -1,0 +1,129 @@
+$bgcolor: rgba(0,0,0,0.657);
+$white-text: white;
+$center: center;
+$flex: flex;
+$rowwrap: wrap row;
+$full: 100%;
+$none: 0;
+body {
+    margin: $none;
+    padding: $none;
+    font-family: 'Josefin Sans', sans-serif;
+    background: $bgcolor;
+    color: $white-text;
+}
+
+.float-left {
+    float: left;
+}
+.float-right {
+    float: right;
+}
+
+header {
+    background: $bgcolor;
+    padding: 30px;
+    max-height: 20%;
+}
+
+nav {
+    strong {
+        font-size: x-large;
+    }
+    ul {
+        display: inline-flex;
+    }
+    li {
+        font-size: small;
+        list-style-type: none;
+        margin-left: 20px;
+        a {
+            text-decoration: none;
+            color: $white-text;
+        }
+        a:hover {
+            text-decoration: none;
+            color: $white-text;
+        }
+    }
+}
+.nav-container {
+    display: $flex;
+    text-align: $center;
+    justify-content: space-between;
+    flex-flow: nowrap row;
+    .nav-item {
+        display: inline-flex;
+        align-content: $center;
+        padding: $none;
+    }
+}
+
+.flex-container {
+    width: $full;
+    display: $flex;
+    justify-content: $center;
+    flex-flow: $rowwrap;
+    .flex-item {
+        align-content: $center;
+        margin: 10px;
+        flex-basis: 30%;
+        .card-footer {
+            color: black;
+        }
+    }
+}
+
+.form-container {
+    display: $flex;
+    text-align: $center;
+    justify-content: $center;
+    flex-flow: $rowwrap;
+    .form-item {
+        align-content: $center;
+        flex-basis: 80%;
+        margin: 5px;
+    }
+    button {
+        background: #5961FF;
+        color: $white-text;
+    }
+}
+
+footer {
+    background: $bgcolor;
+    text-align: $center;
+    padding: 8px;
+    width: $full;
+    position: fixed;
+    bottom: $none;
+}
+
+@media screen and (max-width: 576px) {
+    .flex-item {
+        flex-basis: $full!important;
+    }
+
+    nav ul {
+        display: block!important;
+        li {
+            justify-content: $center;
+            text-align: $center;
+            margin-right: 50px;
+            padding: $none;
+        }
+    }
+    .nav-container {
+        align-content: $center;
+        text-align: $center;
+        justify-content: $center;
+        flex-flow: $rowwrap;
+        .nav-item {
+            justify-content: $center;
+            text-align: $center;
+            flex-basis: $full;
+            margin: $none;
+            padding: $none;
+        }
+    }
+}

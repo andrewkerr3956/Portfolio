@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIPHY Search API</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='css/style.css' />
+</head>
+
+<body>
+    <header>
+        <nav class='nav-container'>
+            <span class='nav-item'>
+                <strong>GIPHY API</strong>
+            </span>
+            <span class='nav-item'>
+                <ul>
+                    <li><a href='#'>Home</a></li>
+                    <li><a href='#'>Search</a></li>
+                    <li><a href='http://giphy.com/' target='blank'>GIPHY</a></li>
+                </ul>
+            </span>
+
+        </nav>
+    </header>
+    <main>
+        <div class='form-container'>
+            <div class='form-item'>
+                <input type='text' id='search-query' placeholder='Search anything' />
+                <button id='search-button' class='form-group'>Search</button>
+            </div>
+            <div class='form-item'>
+                <label for='type'>Results Type</label>
+                <input type='radio' id='gifs' name='type' value='gifs' checked>GIF</input>
+                <input type='radio' id='stickers' name='type' value='stickers'>Sticker</input> <br />
+            </div>
+            <div class='form-item'>
+                <label for='search-limit'>Results Limit (Max 50)</label>
+                <input type='number' id='search-limit' placeholder='50' min='0' max='50' />
+            </div>
+
+
+        </div>
+        <div id='flexbox' class='flex-container'>
+
+        </div>
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type='text/javascript' src='js/main.js'></script>
+
+    </main>
+    <footer id='footer'>
+        <div class='container-fluid'>
+            All Gifs and Stickers belong to GIPHY.
+        </div>
+    </footer>
+
+</body>
+
+</html>
