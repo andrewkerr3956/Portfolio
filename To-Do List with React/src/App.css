@@ -1,0 +1,126 @@
+.float-right {
+  float: right;
+}
+
+header {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+h2 {
+  color: white;
+  margin-left: 10px;
+
+}
+
+nav {
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+
+nav ul {
+  padding: 10px;
+}
+
+nav li {
+  text-decoration: none;
+  display: inline;
+  padding: 5px;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+}
+
+nav li .active {
+  padding: 10px 10px;
+  background: royalblue;
+}
+
+nav li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.task-container {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.task-container label{
+  text-align: left;
+}
+
+.task-container > input {
+  border-radius: round;
+  height: 25px;
+  width: 350px;
+  margin-right: 70px;
+}
+
+.task-container > button {
+  border: 2px solid royalblue;
+  color: royalblue;
+  border-radius: 4px;
+  height: 30px;
+  width: 150px;
+}
+
+.toggle-button {
+  border: 2px solid royalblue;
+  background: royalblue;
+  color: white;
+  border-radius: 4px;
+  margin: 10px;
+}
+
+.form-container {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.contact-heading {
+  text-align: center;
+  color: black;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 576px) {
+  h2 {
+    text-align: center;
+  }
+
+  nav ul {
+    text-align: center;
+  }
+
+  .task-container > input {
+    width: 45%;
+    margin-right: 35px;
+  }
+  .task-container > button {
+    width: 30%;
+  }
+
+  .task-container ul {
+    margin-left: 35px !important;
+    width: 80% !important;
+  }
+
+  #firstName,
+  #lastName,
+  #email {
+    width: 50%;
+  }
+
+  #comments {
+    width: 80%;
+  }
+
+  .contact-heading {
+    font-size: medium;
+    text-align: center;
+  }
+}
