@@ -1,0 +1,5 @@
+1) As a user, I want to be able to search for a stock and buy shares of the stock.
+
+2) As a user, when I am done with my portfolio for the session, I should be able to save it for future use.
+
+3) As a user, I should be able to reset my portfolio if I need to.
