@@ -1,5 +1,5 @@
 # Portfolio
-View "Stock Manager" LIVE: https://hidden-fortress-58471.herokuapp.com/
+View "Stock Manager" LIVE: https://hidden-fortress-58471.herokuapp.com/ <br />
 View "Answers Galore Forum" LIVE: https://pacific-plains-96373.herokuapp.com/
 
 
