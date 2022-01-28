@@ -1,0 +1,43 @@
+html {
+  overflow-y: hidden;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Roboto,-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+label {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 380px) {
+  input {
+    width: 80%;
+  }
+}
+
+input[readOnly] {
+  background-color: lightgray;
+}
+
+textarea[readOnly] {
+  background-color: lightgray;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
