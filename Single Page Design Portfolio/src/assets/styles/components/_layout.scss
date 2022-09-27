@@ -1,0 +1,221 @@
+.layout-container {
+    background-color: map-get($colors, "lightCream");
+    margin: auto;
+    max-width: 1100px;
+    min-height: 100vh;
+    padding: 0 40px 0 40px;
+
+    @media screen and (max-width: map-get($breakpoints, "sm")) {
+        padding: 0 16px 0 16px;
+    }
+}
+
+// Header and Footer
+header {
+    padding: 34px 0;
+}
+
+footer {
+    padding: 56px 0 64px 0;
+
+    @media screen and (max-width: map-get($breakpoints, "sm")) {
+        padding: 40px 0 32px 0;
+    }
+}
+
+.logo {
+    width: 64px;
+    height: 64px;
+
+    @media screen and (max-width: map-get($breakpoints, "sm")) {
+        width: 48px;
+        height: 48px;
+    }
+
+    @media screen and (max-width: 300px) {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+// Intro section
+section[name="intro"] {
+    >p {
+        width: 63%;
+        margin: 24px auto 80px auto;
+        @media screen and (max-width: map-get($breakpoints, "md")) {
+            width: 80%;
+        }
+        @media screen and (max-width: map-get($breakpoints, "sm")) {
+            width: 100%;
+            margin: 16px auto 32px auto;
+        }
+    }
+}
+
+// About section
+section[name="about"] {
+    margin-top: 136px;
+
+    @media screen and (max-width: map-get($breakpoints, "sm")) {
+        margin-top: 100px;
+    }
+}
+.about-flex {
+    column-gap: 125px;
+
+    >img {
+        width: 445px;
+        height: 445px;
+
+        @media screen and (max-width: 950px) {
+            transform: translateX(-25%);
+            -webkit-transform: translateX(-25%);
+            -moz-transform: translateX(-25%);
+            -o-transform: translateX(-25%);
+            -ms-transform: translateX(-25%);
+        }
+
+        @media screen and (max-width: 700px) {
+            transform: translateX(0);
+            -webkit-transform: translateX(0);
+            -moz-transform: translateX(0);
+            -o-transform: translateX(0);
+            -ms-transform: translateX(0);
+        }
+
+        @media screen and (max-width: 850px) {
+            width: 364px;
+            height: 364px;
+        }
+
+        @media screen and (max-width: map-get($breakpoints, "sm")) {
+            height: 300px;
+            width: 300px;
+        }
+
+        @media screen and (max-width: calc(map-get($breakpoints, "xs") - 1px)) {
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    div.flex-col {
+        >p {
+            width: 95%;
+            margin-top: 34px;
+
+            @media screen and (max-width: 950px) {
+                width: 100%;
+            }
+
+            @media screen and (max-width: map-get($breakpoints, "sm")) {
+                width: 100%;
+                margin-top: 24px;
+            }
+
+            @media screen and (min-width: map-get($breakpoints, "xs")) and (max-width: 415px) {
+                width: 343px;
+            }
+
+            @media screen and (max-width: calc(map-get($breakpoints, "xs") - 1px)) {
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width: map-get($breakpoints, "sm")) {
+            align-items: center;
+            -ms-flex-align: center;
+        }
+
+    }
+
+    @media screen and (max-width: map-get($breakpoints, "lg")) {
+        column-gap: 97px;
+    }
+
+    @media screen and (max-width: map-get($breakpoints, "md")) {
+        column-gap: 69px;
+    }
+
+    @media screen and (max-width: 750px) {
+        column-gap: 55px;
+    }
+
+    @media screen and (max-width: 720px) {
+        column-gap: 41px;
+    }
+
+    @media screen and (max-width: 700px) {
+        // Force the direction change, row doesn't work well here at lower screen sizes.
+        flex-direction: column;
+        -ms-flex-direction: column;
+        align-items: center;
+        -ms-flex-align: center;
+        text-align: center;
+        row-gap: 40px;
+        column-gap: 0;
+    }
+
+    button {
+        margin-top: 32px;
+        @media screen and (max-width: 700px) {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media screen and (max-width: map-get($breakpoints, "sm")) {
+            margin-top: 24px;
+        }
+    }
+}
+
+// Work section
+section[name="work"] {
+    row-gap: 56px;
+    margin-top: 88px;
+    @media screen and (max-width: map-get($breakpoints, "sm")) {
+        row-gap: 32px;
+        margin-top: 100px;
+    }
+}
+
+// Book a call section
+section[name="book-call"] {
+    margin-top: 88px;
+
+    @media screen and (max-width: map-get($breakpoints, "sm")) {
+        margin-top: 100px;
+    }
+}
+.book-call-container {
+    background-color: map-get($colors, "black");
+    border-radius: 10px;
+    padding: 80px 95px 80px 65px;
+
+    .book-call-text {
+        color: map-get($colors, "lightCream");
+        row-gap: 25px;
+        width: 58%;
+
+        >p {
+            color: map-get($colors, "lightCream");
+        }
+
+        @media screen and (max-width: 896px) {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 896px) {
+        flex-direction: column;
+        -ms-flex-direction: column;
+        row-gap: 25px;
+        text-align: center;
+        padding: 60px 70px 60px 70px;
+    }
+
+    @media screen and (max-width: map-get($breakpoints, "sm")) {
+        padding: 49px 24px 49px 24px;
+    }
+}

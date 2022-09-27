@@ -1,0 +1,27 @@
+// Some keys are in quotes since they can cause issues when converting to CSS.
+$colors: (
+    "black": #030303,
+    mediumBrown: #7A746E,
+    lightCream: #FFF7F0,
+    galacticBlue: #755CDE,
+    summerYellow: #F6A560,
+    "pink": #F39E9E,
+    lightRed: #EB7565,
+    "cyan": #61C4B7,
+    darkPurple: #552049
+);
+
+$sizes: (
+    25: 25%,
+    50: 50%,
+    75: 75%,
+    100: 100%
+);
+
+$breakpoints: (
+    xs: 375px,
+    sm: 500px,
+    md: 768px,
+    lg: 1024px,
+    xl: 1440px
+);

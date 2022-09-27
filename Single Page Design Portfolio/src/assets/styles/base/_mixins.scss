@@ -1,0 +1,20 @@
+@mixin button-style {
+    border-radius: 28px;
+    padding: 14px 45px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    color: map-get($colors, "lightCream");
+    width: 228px;
+
+    @media screen and (max-width: map-get($breakpoints, "sm")) {
+        font-size: 14px;
+        padding: 8px 28px;
+        width: 176px;
+    }
+
+    @media screen and (max-width: 300px) {
+        font-size: 12px;
+        padding: 2px 11px;
+    }
+}

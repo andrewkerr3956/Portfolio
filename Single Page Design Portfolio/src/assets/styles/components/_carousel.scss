@@ -1,0 +1,71 @@
+.work-carousel-container {
+    width: 100%;
+    display: block;
+    overflow-x: visible;
+}
+
+.work-carousel {
+    column-gap: 30px;
+    // transform: translateX(-860px);
+    // -webkit-transform: translateX(-860px);
+    // -moz-transform: translateX(-860px);
+    // -o-transform: translateX(-860px);
+    // -ms-transform: translateX(-860px);
+
+    @media screen and (max-width: calc(map-get($breakpoints, "md") - 30px)) {
+        column-gap: 22.5px;
+    }
+
+    @media screen and (max-width: map-get($breakpoints, "sm")) {
+        column-gap: 15px;
+    }
+}
+
+.work-carousel-item {
+    height: 360px;
+    min-width: 540px;
+    max-width: 540px;
+
+    >img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+
+    @media screen and (max-width: calc(map-get($breakpoints, "md") - 30px)) {
+        min-width: 405px;
+        max-width: 405px;
+        height: 270px;
+    }
+
+    @media screen and (max-width: map-get($breakpoints, "sm")) {
+        min-width: 270px;
+        max-width: 270px;
+        height: 180px;
+    }
+}
+
+.scroll-buttons {
+    column-gap: 16px;
+    width: auto;
+    margin-top: 56px;
+    @media screen and (max-width: map-get($breakpoints, "sm")) {
+        margin-top: 32px;
+    }
+    button {
+        border-radius: 50%;
+        width: 64px;
+        height: 64px;
+        background-color: map-get($colors, "black");
+
+        @media screen and (max-width: calc(map-get($breakpoints, "xs") - 10px)) {
+            width: 48px;
+            height: 48px;
+        }
+
+        &:hover {
+            cursor: pointer;
+            background-color: map-get($colors, "galacticBlue");
+        }
+    }
+}
